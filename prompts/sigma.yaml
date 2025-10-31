@@ -1,0 +1,13 @@
+# Sigma templates live here as YAML documents.
+# Example:
+title: Placeholder Rule
+id: 00000000-0000-0000-0000-000000000000
+status: test
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    CommandLine|contains: "-enc"
+  condition: selection
+level: medium

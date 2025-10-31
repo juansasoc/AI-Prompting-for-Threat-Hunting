@@ -101,7 +101,28 @@ See `examples/` for working drafts.
 ---
 
 ## 📘 Glossary — AI / LLM Terms for Threat Hunters
-LLM, Prompt Engineering, System Prompt, Chain-of-Thought, Context Window, Grounding, Hallucination, Temperature, Few-/Zero-Shot, RAG, Embedding, Fine-Tuning, Guardrails, Self-Consistency, Token, Inference, Context Injection, Validation Step.
+
+| Term | What it means / Why it matters |
+|---|---|
+| **LLM (Large Language Model)** | A model that generates text. Use it to draft hunts, queries, and summaries—but always verify with data. |
+| **Prompt Engineering** | Structuring instructions to get reliable, reproducible outputs (queries, hypotheses, reports). |
+| **System Prompt** | The persistent “role/rules” header that sets behavior (guardrails, formats, do/don’t). |
+| **Chain-of-Thought (CoT)** | Step-by-step reasoning. Useful for transparent detection logic; keep summaries concise in final reports. |
+| **Context Window** | How much text the model can consider at once. Budget tokens; include only essential fields/logs. |
+| **Grounding** | Tie outputs to actual sources (field names, sample events, ATT&CK). Reduces hallucinations. |
+| **Hallucination** | Confident but wrong output. Mitigate with schema-first prompts, explicit uncertainty, validation steps. |
+| **Temperature** | Randomness control. Low = deterministic (best for queries/detections); high = creative (drafting summaries). |
+| **Zero-Shot / Few-Shot** | No examples vs. a few examples in the prompt. Few-shot helps enforce style/format. |
+| **RAG (Retrieval-Augmented Generation)** | Pull relevant docs/logs first, then prompt. Great for TI notes, playbooks, runbooks. |
+| **Embedding** | Vector representations for similarity search; useful for alert dedup/related-case lookups. |
+| **Fine-Tuning** | Train a model on your SOC data to match style or domain. Use sparingly; maintenance overhead. |
+| **Guardrails** | Constraints: schema only, cite uncertainty, output JSON/code blocks, list validation steps. |
+| **Self-Consistency** | Run reasoning multiple times and take consensus to reduce errors for tricky analyses. |
+| **Token** | Billing/length unit. Roughly ~4 chars each; matters for large logs or multi-step prompts. |
+| **Inference** | Generating an answer from the model. Latency/cost considerations for automation. |
+| **Context Injection** | Supplying schemas, field lists, or sample events to ground outputs. |
+| **Validation Step** | Explicit instructions on how you (or the model) will verify results before action. |
+
 
 ---
 

@@ -2,7 +2,7 @@
 # AI Prompting for Threat Hunting — Field Guide
 
 ![AI Prompting Banner](assets/banner.png)
-
+This repository is designed as a companion field-guide for SOC analysts and detection engineers looking to harness large-language models (LLMs) for threat hunting. You’ll find end-to-end prompt frameworks, ready-to-use templates, and example workflows across Windows, Azure, AWS and Elastic.
 > **Status:** v0.4 (examples + graphic integration)  
 > **Maintainer:** Juan Rivera (juansasoc)  
 > **Scope:** Practical prompt patterns, reusable templates, and examples to accelerate threat hunting and detection engineering with LLMs.

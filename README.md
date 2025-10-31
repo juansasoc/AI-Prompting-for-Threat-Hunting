@@ -123,7 +123,6 @@ See `examples/` for working drafts.
 | **Context Injection** | Supplying schemas, field lists, or sample events to ground outputs. |
 | **Validation Step** | Explicit instructions on how you (or the model) will verify results before action. |
 
-
 ---
 
 ## 🧪 Prompt Evaluation Rubric
